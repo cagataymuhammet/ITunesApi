@@ -1,8 +1,8 @@
-# [ITunes Search Api Poject ( MVVM & Kotlin & Hilt % Coroutines )](https://github.com/cagataymuhammet/ITunesApi)
+# [ITunes Search Api Poject ( MVVM & Kotlin & Hilt & Coroutines )](https://github.com/cagataymuhammet/ITunesApi)
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/android_arc.png?token=ABT34M6HMKPXJDL4BE5JSLDBEZFQQ"/>
+<img src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/android_arc.png"/>
 </p>
 
 
