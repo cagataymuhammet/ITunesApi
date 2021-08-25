@@ -7,7 +7,7 @@
 
 
 # App
-![appicon](https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/app_icon.png?token=ABT34M2W5YFY2XYSJWOW2GLBEZEMY)
+ <img height= "100"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/app_icon.png?token=ABT34M2W5YFY2XYSJWOW2GLBEZEMY" />
 
 
 <h2 id="Outputs">Outputs</h2>
