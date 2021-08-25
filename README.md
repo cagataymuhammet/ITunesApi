@@ -5,27 +5,28 @@
 <img src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/android_arc.png"/>
 </p>
 
+https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/android_arc.png
 
 # App
- <img height= "100"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/app_icon.png?token=ABT34M554YTBY5SS2CYHYHLBEZFXU" />
+ <img height= "130"  src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/app_icon.png" />
 
 
 <h2 id="Outputs">Outputs</h2>
 <p>
-  <img height= "400"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/screen1.png?token=ABT34M3P2RH2P5C66WTAQJTBEZFTK" alt="SS1" />
-  <img height= "400"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/screen2.png?token=ABT34M6H4HYR2VSC5ETKJADBEZFEA" alt="SS2" />
+  <img height= "400"  src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/screen1.png" alt="SS1" />
+  <img height= "400"  src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/screen2.png" alt="SS2" />
 </p>
 
 ## Architecture
 The app uses MVVM [Model-View-ViewModel] architecture to have a unidirectional flow of data, separation of concern, testability, and a lot more.
 
-![Architecture](https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/mvvm.png?token=ABT34M3B6WW6SB3WWWVQKR3BEZFNC)
+![Architecture](https://github.com/cagataymuhammet/ITunesApi/blob/master/screens//mvvm.png)
 
 # What is MVVM?
 Model-View-ViewModel (ie MVVM) is a template of a client application architecture, proposed by John Gossman as an alternative to MVC and MVP patterns when using Data Binding technology. Its concept is to separate data presentation logic from business logic by moving it into particular class for a clear distinction.  
 
 ## Simple Architecture
-![Architecture](https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/arc.png?token=ABT34M7IGDV3FDX6D35YQYDBEZFVM)
+![Architecture](https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/arc.png)
 
 ## Libraries and tools 🛠
 <li>JetPack Navigation</li>
