@@ -5,7 +5,6 @@
 <img src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/android_arc.png"/>
 </p>
 
-https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/android_arc.png
 
 # App
  <img height= "130"  src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/app_icon.png" />
