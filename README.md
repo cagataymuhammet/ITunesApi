@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/android_arc.png?token=ABT34MYBE3C6SSQSUUAU4P3BEZEKQ"/>
+<img src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/android_arc.png?token=ABT34M5ONQ6QYC6MZNEG6ADBEZFIC"/>
 </p>
 
 
