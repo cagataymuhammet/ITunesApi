@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/android_arc.png?token=ABT34M5ONQ6QYC6MZNEG6ADBEZFIC"/>
+<img src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/android_arc.png?token=ABT34MYBE3C6SSQSUUAU4P3BEZEKQ"/>
 </p>
 
 
@@ -13,13 +13,13 @@
 <h2 id="Outputs">Outputs</h2>
 <p>
   <img height= "400"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/screen1.png?token=ABT34M7LYE5UOLVNPQZJ2PTBEZEQO" alt="SS1" />
-  <img height= "400"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/screen2.png?token=ABT34M7LYE5UOLVNPQZJ2PTBEZEQO" alt="SS2" />
+  <img height= "400"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/screen2.png?token=ABT34M6H4HYR2VSC5ETKJADBEZFEA" alt="SS2" />
 </p>
 
 ## Architecture
 The app uses MVVM [Model-View-ViewModel] architecture to have a unidirectional flow of data, separation of concern, testability, and a lot more.
 
-![Architecture](https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/mvvm.png?token=ABT34M5JVTF5E77K3S322QLBEZEU42)
+![Architecture](https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/mvvm.png?token=ABT34M3B6WW6SB3WWWVQKR3BEZFNC)
 
 # What is MVVM?
 Model-View-ViewModel (ie MVVM) is a template of a client application architecture, proposed by John Gossman as an alternative to MVC and MVP patterns when using Data Binding technology. Its concept is to separate data presentation logic from business logic by moving it into particular class for a clear distinction.  
