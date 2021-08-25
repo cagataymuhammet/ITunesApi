@@ -13,8 +13,8 @@ https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/android_arc.png
 
 <h2 id="Outputs">Outputs</h2>
 <p>
-  <img height= "400"  src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/screen1.png" alt="SS1" />
-  <img height= "400"  src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/screen2.png" alt="SS2" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/screen1.png" alt="SS1" />
+  <img height= "700"  src="https://github.com/cagataymuhammet/ITunesApi/blob/master/screens/screen2.png" alt="SS2" />
 </p>
 
 ## Architecture
