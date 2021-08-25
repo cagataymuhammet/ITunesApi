@@ -12,7 +12,7 @@
 
 <h2 id="Outputs">Outputs</h2>
 <p>
-  <img height= "400"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/screen1.png?token=ABT34M7LYE5UOLVNPQZJ2PTBEZEQO" alt="SS1" />
+  <img height= "400"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/screen1.png?token=ABT34M3P2RH2P5C66WTAQJTBEZFTK" alt="SS1" />
   <img height= "400"  src="https://raw.githubusercontent.com/cagataymuhammet/ITunesApi/master/screens/screen2.png?token=ABT34M6H4HYR2VSC5ETKJADBEZFEA" alt="SS2" />
 </p>
 
