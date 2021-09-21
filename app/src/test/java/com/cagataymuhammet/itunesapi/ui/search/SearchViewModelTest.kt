@@ -61,7 +61,6 @@ class SearchViewModelTest {
             .isEqualTo(searchResponseMockData)
     }
 
-
     @Test
     fun `when network request is loading`() {
 
