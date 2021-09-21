@@ -1,6 +1,5 @@
 package com.cagataymuhammet.itunesapi.ui.search.search
 
-import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -112,7 +111,7 @@ class SearchFragment : BaseBindingFragment<FragmentSearchBinding>() {
 
     private fun observers() {
         mViewModel.apply {
-             searchResponseLiveData.observe(
+            searchResponsePagedLiveData.observe(
                 viewLifecycleOwner,
                 object : Observer<PagedList<SearchResult>> {
                     override fun onChanged(t: PagedList<SearchResult>?) {
@@ -121,7 +120,6 @@ class SearchFragment : BaseBindingFragment<FragmentSearchBinding>() {
                 })
         }
     }
-
 
     companion object {
         var selectedEntityType: EntitiyType? = EntitiyType.ALL
