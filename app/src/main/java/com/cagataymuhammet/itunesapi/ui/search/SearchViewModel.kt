@@ -2,12 +2,12 @@ package com.cagataymuhammet.itunesapi.ui.search
 
 
 import android.os.AsyncTask
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import androidx.paging.*
-import com.cagataymuhammet.itunesapi.data.model.SearchResult
+import androidx.paging.PagedList
 import com.cagataymuhammet.itunesapi.data.datasource.remote.SearchPositionalDataSource
+import com.cagataymuhammet.itunesapi.data.model.SearchResponse
+import com.cagataymuhammet.itunesapi.data.model.SearchResult
 import com.cagataymuhammet.itunesapi.ui.base.BaseViewModel
 import com.cagataymuhammet.itunesapi.util.UiThreadExecutor
 import com.cagataymuhammet.itunesapi.util.constants.Constants
@@ -22,46 +22,56 @@ import javax.inject.Inject
 @HiltViewModel
 class SearchViewModel @Inject constructor(private val repository: SearchRepository) : BaseViewModel() {
 
-    var searchResponseLiveData = MutableLiveData<PagedList<SearchResult>>()
+    var searchResponsePagedLiveData = MutableLiveData<PagedList<SearchResult>>()
+    var searchResponseLiveData = MutableLiveData<SearchResponse>()
 
-    fun doSearch(term: String,entity: String?) {
+    fun doSearch(term: String, entity: String?) {
 
         viewModelScope.launch {
 
-                repository.doSearch(term,entity).collect {
+            repository.doSearch(term, entity).collect {
 
-                    when (it) {
+                when (it) {
 
-                        is Resource.Loading -> {
-                            isPageLoaded.postValue(false)
-                            isLoading.postValue(true)
-                        }
+                    is Resource.Loading -> {
+                        isPageLoaded.postValue(false)
+                        isLoading.postValue(true)
+                    }
 
                         is Resource.Error -> {
                             isLoading.postValue(false)
                             exceptionLiveData.postValue(it.apiException)
                         }
 
-                        is Resource.Success -> {
+                    is Resource.Success -> {
 
-                            isLoading.postValue(false)
-                            isPageLoaded.postValue(true)
+                        isLoading.postValue(false)
+                        isPageLoaded.postValue(true)
 
-                            it.data.let {
+                        it.data.let {
 
-                                val pagedListConfig = PagedList.Config.Builder()
+                            searchResponseLiveData.postValue(it)
+
+                            it.results.apply {
+
+                                if (isNotEmpty()) {
+                                    val pagedListConfig = PagedList.Config.Builder()
                                         .setPageSize(Constants.PAGE_SIZE)
                                         .build()
 
-                                val pagedList = PagedList.Builder(SearchPositionalDataSource(it.results),pagedListConfig)
-                                        .setNotifyExecutor (UiThreadExecutor ())
-                                        .setFetchExecutor (AsyncTask.THREAD_POOL_EXECUTOR)
-                                        .build ()
+                                    val pagedList = PagedList.Builder(
+                                        SearchPositionalDataSource(this),
+                                        pagedListConfig
+                                    )
+                                        .setNotifyExecutor(UiThreadExecutor())
+                                        .setFetchExecutor(AsyncTask.THREAD_POOL_EXECUTOR)
+                                        .build()
 
-                                searchResponseLiveData.postValue(pagedList)
-
+                                    searchResponsePagedLiveData.postValue(pagedList)
+                                }
                             }
                         }
+                    }
                     }
                 }
         }
