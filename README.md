@@ -1,4 +1,4 @@
-# [ITunes Search Api Poject ( MVVM & Kotlin & Hilt & Coroutines )](https://github.com/cagataymuhammet/ITunesApi)
+# [ITunes Search Api Poject ( MVVM & Kotlin & Hilt & Coroutines & Unit-Testing )](https://github.com/cagataymuhammet/ITunesApi)
 
 
 <p align="center">
